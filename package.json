@@ -1,0 +1,21 @@
+{
+  "name": "nodejs_mongodb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siv-sys/NodeJS_MongoDB.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/siv-sys/NodeJS_MongoDB/issues"
+  },
+  "homepage": "https://github.com/siv-sys/NodeJS_MongoDB#readme"
+}
