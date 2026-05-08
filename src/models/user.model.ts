@@ -6,6 +6,11 @@ export interface IUserDocument extends IUser, Document {}
 
 const UserSchema: Schema = new Schema(
     {
+        userId: {
+            type: Number,
+            unique: true,
+            sparse: true,
+        },
         name: {
             type: String,
             required: [true, 'Please add a name'],
