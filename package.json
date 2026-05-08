@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -13,9 +13,16 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/siv-sys/NodeJS_MongoDB/issues"
   },
-  "homepage": "https://github.com/siv-sys/NodeJS_MongoDB#readme"
+  "homepage": "https://github.com/siv-sys/NodeJS_MongoDB#readme",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongoose": "^9.6.1",
+    "nodemon": "^3.1.14",
+    "cors": "^2.8.5"
+  }
 }
