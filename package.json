@@ -2,20 +2,34 @@
   "name": "nodejs_mongodb",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "keywords": [],
+  "homepage": "https://github.com/siv-sys/NodeJS_MongoDB#readme",
+  "bugs": {
+    "url": "https://github.com/siv-sys/NodeJS_MongoDB/issues"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/siv-sys/NodeJS_MongoDB.git"
   },
-  "keywords": [],
-  "author": "",
   "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/siv-sys/NodeJS_MongoDB/issues"
+  "author": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/app.js",
+    "build": "tsc",
+    "dev": "nodemon node dist/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "homepage": "https://github.com/siv-sys/NodeJS_MongoDB#readme"
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongoose": "^9.6.1",
+    "nodemon": "^3.1.14"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.6.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
+  }
 }

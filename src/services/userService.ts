@@ -1,0 +1,21 @@
+import User from '../models/userModel';
+import { IUser } from '../models/userModel';
+
+export const createUserService = async (userData: IUser) => {
+    try {
+        const newUser = new User(userData);
+        await newUser.save();
+        return newUser;
+    } catch (error) {
+        throw new Error(`Error creating user: ${error}`);
+    }
+};
+
+export const getAllUsersService = async () => {
+    try {
+        const users = await User.find();
+        return users;
+    } catch (error) {
+        throw new Error(`Error fetching users: ${error}`);
+    }
+};
